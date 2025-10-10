@@ -1,0 +1,54 @@
+{
+	"name": "vite-hmr",
+	"type": "module",
+	"version": "1.0.0",
+	"description": "Framework agnostic - Laravel inspired hot reload module plugin",
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"development": "./index.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"sideEffects": false,
+	"scripts": {
+		"build": "vite build",
+		"format": "biome format --write index.ts",
+		"lint": "biome lint index.ts",
+		"prepublishOnly": "vite build"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.2.5",
+		"@types/bun": "latest",
+		"vite": "^7.1.9",
+		"vite-plugin-dts": "^4.5.4"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"files": [
+		"README.md",
+		"dist"
+	],
+	"dependencies": {
+		"vite-plugin-full-reload": "^1.2.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/eznix86/hmr.git"
+	},
+	"keywords": [
+		"hot",
+		"hot-reload",
+		"vite"
+	],
+	"author": "Bruno Bernard",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/eznix86/hmr/issues"
+	},
+	"homepage": "https://github.com/eznix86/hmr#readme"
+}
