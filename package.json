@@ -27,7 +27,7 @@
 		"vite-plugin-dts": "^4.5.4"
 	},
 	"peerDependencies": {
-		"typescript": "^5"
+		"typescript": "^5 || ^7.0.0"
 	},
 	"files": [
 		"README.md",
